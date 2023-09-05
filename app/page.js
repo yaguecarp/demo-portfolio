@@ -1,113 +1,170 @@
-import Image from 'next/image'
+import Image from "next/image";
+import { BsInstagram } from "react-icons/bs";
+import { SiVsco } from "react-icons/si";
+
+import Avatar from "../src/assets/img/background/DACA1378-472C-48FE-B0C2-EC65639013D3.jpg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
+    <main className="min-h-screen w-full">
+      <header
+        className={`w-full h-screen items-center justify-center  flex flex-col bg-[url(../src/assets/img/background/6B99E25D-CE04-4971-B271-2EA71408B544.jpg)]  bg-cover bg-center bg-fixed`}
+      >
+        <div className="absolute w-full h-screen bg-black opacity-50 bg-fixed"></div>
+        <h1 className="mt-20 font-cinzel z-10 text-4xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-winter-600 via-winter-100 to-winter-300 tracking-widest font-extrabold border border-winter-600 p-5">
+          LULA DE ORO
+        </h1>
+        <p className="z-10 mt-5 text-center font-cinzel text-xs md:text-xl text-white tracking-widest font-bold">
+          Un recorrido visual por momentos únicos <br /> y emociones auténticas.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <a
+          href="#"
+          className="bg-winter-700 text-xl z-10 px-4 py-3 hover:shadow-2xl hover:shadow-winter-200 transition-all rounded-md flex items-center justify-center font-cinzel font-medium tracking-wider text-winter-300 mt-10"
+        >
+          EXPLORAR
+        </a>
+      </header>
+
+      <section
+        className={`w-full h-screen  flex bg-[url(../src/assets/img/background/DACA1378-472C-48FE-B0C2-EC65639013D3.jpg)]  bg-cover bg-center  bg-fixed`}
+      >
+        <div className="absolute w-full h-screen bg-black bg-opacity-50 bg-fixed"></div>
+        <div className="z-10 w-full md:w-1/2  p-20  ">
+          <div className="w-full h-full flex flex-col gap-10 border border-winter-400 p-10">
+            <p className="text-white font-cinzel text-sm md:text-2xl tracking-wide leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              error tempora beatae cupiditate. Optio voluptatem, rerum
+              reprehenderit ipsam quis pariatur labore repellat, quo provident
+              omnis, dicta ducimus ullam maiores assumenda.
+            </p>
+            <a
+              href="#"
+              className=" font-cinzel px-4 py-3 bg-winter-700 text-winter-600 font-light tracking-widest text-xl"
+            >
+              CONTACTO
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      <section
+        className={`w-full h-screen  flex bg-[url(../src/assets/img/background/8DCE109A-2ECB-486B-9248-EED37BEB3469.jpg)]  bg-cover bg-center  bg-fixed`}
+      >
+        <div className="absolute w-full h-screen bg-black bg-opacity-50 bg-fixed"></div>
+        <div className="p-20 gap-10 flex flex-col items-center justify-center z-20">
+          <p className="font-cinzel text-winter-400 text-md md:text-3xl text-center tracking-wider leading-relaxed ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum
+            eius animi itaque minima minus. Tempore architecto deserunt quo
+            libero, repellendus iusto natus aliquam quos, aut corrupti
+            voluptate, sit illo.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="font-cinzel text-winter-400 text-sm md:text-xl text-center tracking-wider leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
-        </a>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
+      <section
+        className={`w-full h-screen  flex bg-[url(../src/assets/img/background/_DSC0445.JPG)]  bg-cover bg-center  bg-fixed`}
+      >
+        <div className="absolute w-full h-screen bg-black bg-opacity-50 bg-fixed"></div>
+        <div className="p-20 gap-10 flex flex-col items-center justify-center z-20">
+          <p className="font-cinzel text-winter-400 text-md md:text-3xl text-center tracking-wider leading-relaxed ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum
+            eius animi itaque minima minus. Tempore architecto deserunt quo
+            libero, repellendus iusto natus aliquam quos, aut corrupti
+            voluptate, sit illo.
           </p>
-        </a>
+          <p className="font-cinzel text-winter-400 text-sm md:text-xl text-center tracking-wider leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+      <section
+        className={`w-full h-screen  flex bg-[url(../src/assets/img/background/7FD1FBD9-BC6E-4ADA-B80B-33CB62F47775.jpg)]  bg-cover bg-center  bg-fixed`}
+      >
+        <div className="absolute w-full h-screen bg-black bg-opacity-50 bg-fixed"></div>
+        <div className="p-20 gap-10 flex flex-col items-center justify-center z-20">
+          <p className="font-cinzel text-winter-400 text-md md:text-3xl text-center tracking-wider leading-relaxed ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsum
+            eius animi itaque minima minus. Tempore architecto deserunt quo
+            libero, repellendus iusto natus aliquam quos, aut corrupti
+            voluptate, sit illo.
           </p>
-        </a>
-      </div>
+          <p className="font-cinzel text-winter-400 text-sm md:text-xl text-center tracking-wider leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+      </section>
+
+      <footer className="w-full h-auto bg-gray-900 flex flex-col items-center md:items-start md:flex-row justify-evenly">
+        <div className=" p-5   flex flex-col items-center md:items-start justify-normal gap-3">
+          <h3 className="font-primary text-winter-200 text-xl">
+            SEGUIME EN INSTAGRAM
+          </h3>
+          <div className="flex flex-col items-center md:items-start">
+            <div className="flex items-center gap-2 text-winter-200 text-2xl">
+              <BsInstagram />
+              <span>@luladeoro</span>
+            </div>
+            <div className="flex items-center gap-2 text-winter-200 text-2xl">
+              <BsInstagram />
+              <span>@todasconelcelu</span>
+            </div>
+          </div>
+          <h3 className="mt-10 font-primary text-winter-200 text-xl">
+            SEGUIME EN VSCO
+          </h3>
+          <div className="pb-5 flex items-center gap-2 text-winter-200 text-2xl">
+            <SiVsco />
+            <span>@luladeoro</span>
+          </div>
+        </div>
+
+        <div className=" p-5   flex flex-col items-center justify-normal gap-3">
+          <h3 className="font-primary text-winter-200 text-xl">
+            DEJAME TU MENSAJE
+          </h3>
+          <form className="flex flex-col gap-2">
+            <input
+              className="p-2 bg-gray-700"
+              type="text"
+              placeholder="Nombre"
+            />
+            <input
+              className="p-2 bg-gray-700"
+              type="text"
+              placeholder="Correo electronico"
+            />
+            <input
+              className="p-2 bg-gray-700"
+              type="text"
+              placeholder="Asunto"
+            />
+            <textarea
+              className="p-2 bg-gray-700"
+              name=""
+              id=""
+              cols="40"
+              rows="6"
+              placeholder="Mensaje"
+            ></textarea>
+            <button
+              className="py-2 flex justify-center items-center text-winter-200 bg-winter-700"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+        <div className=" p-5   flex flex-col items-center justify-normal gap-3">
+          <div className="bg-[url(../src/assets/img/background/DACA1378-472C-48FE-B0C2-EC65639013D3.jpg)]  bg-cover bg-center flex items-center justify-center w-56 h-56 rounded-full overflow-hidden">
+          </div>
+          <p className="mt-5 font-medium text-winter-200 text-md font-cinzel">Lula de Oro</p>
+          <p className=" font-medium text-winter-200 text-md font-cinzel">2023 - All Rights Reserved</p>
+        </div>
+      </footer>
     </main>
-  )
+  );
 }
